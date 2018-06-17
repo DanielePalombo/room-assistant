@@ -8,6 +8,10 @@ ARG BUILD_DATE
 ARG BUILD_REF
 ARG BUILD_VERSION
 
+RUN echo $BUILD_FROM
+RUN echo $BUILD_ARCH
+RUN echo $BUILD_REF
+
 RUN apk add --no-cache nodejs nodejs-npm python git make g++ bluez libusb libusb-dev
 
 COPY . /room-assistant

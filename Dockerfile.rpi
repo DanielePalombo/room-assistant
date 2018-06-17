@@ -9,7 +9,7 @@ ADD . /room-assistant
 
 # Build room-assistant
 WORKDIR /room-assistant
-RUN rm -Rf node_modules && npm install -q --production
+RUN rm -Rf node_modules && npm install --production
 
 # Expose config volume
 VOLUME ["room-assistant/config"]
